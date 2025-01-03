@@ -1,0 +1,10 @@
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-pic {
+    width: 250px;
+    height: 200px;
+    border-radius: 50%;
+  }
