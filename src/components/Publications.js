@@ -3,8 +3,8 @@ import React from 'react';
 const Publications = () => {
   return (
     <div>
-      <h1>Publications</h1>
       <ul>
+        <strong>ORCID-https://orcid.org/0009-0000-8264-0623</strong>
         <li>
           <strong>Masters Thesis: Synchronized Object Sharings for Augmented Reality Virtual Conferencing</strong><br />
           John O. Murray, 2024.<br />

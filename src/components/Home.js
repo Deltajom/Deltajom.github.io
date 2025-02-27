@@ -17,7 +17,7 @@ const Home = () => {
         machine learning, cryptocurrencies, and accelerated computing.
       </p>
       <p>
-        Hobbies: Weight lifting, fixing cars/electronics, gaming, Star Wars, and traveling.
+        Hobbies: Weight lifting, fixing cars/electronics, gaming, Star Wars, and traveling
       </p>
     </div>
   );

@@ -3,7 +3,6 @@ import React from 'react';
 const FeaturedProjects = () => {
   return (
     <div>
-      <h1>Featured Projects</h1>
       <ul>
         <li>
           <strong>Wrist Mounted Hypoglycemia Alert Wristband (ShiverRing)</strong><br />

@@ -3,7 +3,6 @@ import React from 'react';
 const WorkExperience = () => {
   return (
     <div>
-      <h1>Work Experience</h1>
       <ul>
         <li>
           <strong>Research Assistant, University of Massachusetts Amherst</strong><br />

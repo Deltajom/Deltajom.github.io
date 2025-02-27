@@ -8,20 +8,29 @@ import FeaturedProjects from './components/FeaturedProjects';
 import WorkRequest from './components/WorkRequest';
 import OnlineSamples from './components/OnlineSamples';
 import Contact from './components/Contact';
+import './App.css'; // New CSS file for overall styling
 
 const App = () => {
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/work-experience" element={<WorkExperience />} />
-        <Route path="/publications" element={<Publications />} />
-        <Route path="/featured-projects" element={<FeaturedProjects />} />
-        <Route path="/work-request" element={<WorkRequest />} />
-        <Route path="/online-samples" element={<OnlineSamples />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <div className="app-container">
+        <Navbar />
+        <div className="content-wrapper">
+          <div className="ad-column left-ad"> {/* Left Ad Placeholder */} </div>
+          <div className="main-content">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/work-experience" element={<WorkExperience />} />
+              <Route path="/publications" element={<Publications />} />
+              <Route path="/featured-projects" element={<FeaturedProjects />} />
+              <Route path="/work-request" element={<WorkRequest />} />
+              <Route path="/online-samples" element={<OnlineSamples />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </div>
+          <div className="ad-column right-ad"> {/* Right Ad Placeholder */} </div>
+        </div>
+      </div>
     </Router>
   );
 };

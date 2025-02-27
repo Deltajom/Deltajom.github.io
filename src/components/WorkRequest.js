@@ -36,7 +36,6 @@ const WorkRequest = () => {
 
   return (
     <div>
-      <h1>Work Request</h1>
       <form onSubmit={handleSubmit}>
         <label>
           Your Name:
