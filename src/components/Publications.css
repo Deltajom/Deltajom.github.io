@@ -1,0 +1,63 @@
+/* Container */
+.publications-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: left;
+}
+
+/* ORCID Link */
+.orcid-link {
+    text-align: center;
+    font-size: 22px; /* Increased font size */
+    font-weight: bold;
+    margin-bottom: 30px; /* More space before the list */
+    padding-bottom: 10px;
+    border-bottom: 2px solid #800000; /* Bounding line */
+}
+
+.orcid-link a {
+    text-decoration: none;
+    color: #4b0082; /* Deep Purple */
+    transition: color 0.3s ease;
+}
+
+.orcid-link a:hover {
+    color: #800000; /* Dark Maroon */
+}
+
+/* Publications List */
+.publications-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publications-list li {
+    margin-bottom: 25px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Custom Bullet Point */
+.publications-list li::before {
+    content: "•";
+    color: #800000; /* Dark Maroon */
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: 4px;
+}
+
+/* Links in Publications */
+.publications-list a {
+    text-decoration: none;
+    color: #0044cc;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.publications-list a:hover {
+    color: #800000; /* Dark Maroon */
+}

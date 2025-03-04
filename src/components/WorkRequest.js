@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import './WorkRequest.css'; // Import the CSS for styling
 
 const WorkRequest = () => {
   const [name, setName] = useState('');
@@ -25,7 +26,7 @@ const WorkRequest = () => {
         },
         (error) => {
           console.error('FAILED...', error);
-          setStatus('Failed to send email. Please try again.');
+          setStatus('Failed to send email.');
         }
       );
 
@@ -35,40 +36,41 @@ const WorkRequest = () => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label>
-          Your Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Your Email:
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <label>
-          Message:
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            required
-          />
-        </label>
-        <br />
-        <button type="submit">Send</button>
+    <div className="work-request-container">
+      <h2>Submit a Work Request</h2>
+      <p className="work-description">
+        Have an idea for an open-source project or need a custom solution? Feel free to submit a request. 
+        Due to time constraints, responses may take a while. Note that this form is limited to 200 emails per month.
+      </p>
+
+      <form onSubmit={handleSubmit} className="work-request-form">
+        <label>Your Name:</label>
+        <input
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          required
+        />
+
+        <label>Your Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          required
+        />
+
+        <label>Message:</label>
+        <textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          required
+        />
+
+        <button type="submit" className="submit-button">Send</button>
       </form>
-      {status && <p>{status}</p>}
+
+      {status && <p className="status-message">{status}</p>}
     </div>
   );
 };

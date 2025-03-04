@@ -1,0 +1,83 @@
+/* Container Styling */
+.work-request-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Description Text */
+.work-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Form Styling */
+.work-request-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.work-request-form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+/* Input Fields */
+.work-request-form input,
+.work-request-form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+
+/* Double Height for Message Box */
+.work-request-form textarea {
+    height: 150px; /* Increased height */
+}
+
+/* Button Styling - Same as Navbar, but Smaller */
+.submit-button {
+    margin-top: 15px;
+    padding: 12px 24px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.submit-button:hover {
+    background: #800000; /* Dark Maroon */
+}
+
+.submit-button:active {
+    background: #600000; /* Deep Maroon */
+    transform: scale(0.95);
+}
+
+/* Status Message */
+.status-message {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: green;
+}
