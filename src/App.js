@@ -2,12 +2,12 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import WorkExperience from './components/WorkExperience';
 import Publications from './components/Publications';
 import FeaturedProjects from './components/FeaturedProjects';
 import WorkRequest from './components/WorkRequest';
 import OnlineSamples from './components/OnlineSamples';
 import Contact from './components/Contact';
+import Resume from './components/Resume'; // Import Resume page
 import './App.css'; // New CSS file for overall styling
 
 const App = () => {
@@ -20,7 +20,7 @@ const App = () => {
           <div className="main-content">
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/work-experience" element={<WorkExperience />} />
+              <Route path="/resume" element={<Resume />} />
               <Route path="/publications" element={<Publications />} />
               <Route path="/featured-projects" element={<FeaturedProjects />} />
               <Route path="/work-request" element={<WorkRequest />} />

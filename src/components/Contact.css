@@ -1,0 +1,48 @@
+/* Contact Page Container */
+.contact-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Title */
+.contact-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.contact-description {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+/* Divider Line */
+.contact-divider {
+    border: none;
+    height: 2px;
+    background-color: #800000; /* Dark Maroon */
+    width: 50%;
+    margin: 20px auto;
+}
+
+/* Email Link */
+.contact-email {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contact-email a {
+    text-decoration: none;
+    color: #0044cc;
+    transition: color 0.3s ease;
+}
+
+.contact-email a:hover {
+    color: #800000; /* Dark Maroon */
+}
