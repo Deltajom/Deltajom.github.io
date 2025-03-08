@@ -1,26 +1,47 @@
-import React from 'react';
+import React, { useState } from 'react';
+import './FeaturedProjects.css';
 
 const FeaturedProjects = () => {
+  const [openDropdown, setOpenDropdown] = useState(null);
+
+  const toggleDropdown = (index) => {
+    setOpenDropdown(openDropdown === index ? null : index);
+  };
+
   return (
-    <div>
-      <ul>
+    <div className="projects-container">
+      <h2 className="projects-title">Featured Projects</h2>
+
+      <ul className="projects-list">
         <li>
-          <strong>Wrist Mounted Hypoglycemia Alert Wristband (ShiverRing)</strong><br />
-          A wearable device using an M4 microcontroller, accelerometer, and BLE module to detect hand tremor frequencies, alerting nearby family members or emergency services.
+          <strong>TODO</strong><br />
+          TODO<br />
+          <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </li>
         <li>
-          <strong>Dual Tone Audio Device Using PWM</strong><br />
-          A breadboard-mounted Atmel 328p combined with a voltage adder op-amp circuit to create dual-tone sounds through headphones using PWM signals.
+          <strong>TODO</strong><br />
+          TODO<br />
+          <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">Project Details</a>
         </li>
         <li>
-          <strong>Unity & Unreal AR/VR App Development</strong><br />
-          Developed 5+ applications for Microsoft HoloLens 2, including one leveraging research mode to access IMU and depth camera data, and VR apps using OpenXR SDK for compatibility with multiple VR headsets.
-        </li>
-        <li>
-          <strong>Google Forms Spreadsheet Automation</strong><br />
-          Automated a reporting process for research using Google Scripts, enabling efficient management of linked spreadsheets.
+          <strong>TODO</strong><br />
+          TODO<br />
+          <a href="https://github.com/example" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
         </li>
       </ul>
+
+      {/* Featured Project Groups */}
+      <h3 className="dropdown-title">All Projects</h3>
+      {[1, 2, 3, 4, 5].map((num) => (
+        <div key={num} className="dropdown">
+          <button className="dropdown-btn" onClick={() => toggleDropdown(num)}>
+            Group {num} {openDropdown === num ? "▲" : "▼"}
+          </button>
+          <div className={`dropdown-content ${openDropdown === num ? "show" : ""}`}>
+            <p>Details about Group {num} go here.</p>
+          </div>
+        </div>
+      ))}
     </div>
   );
 };

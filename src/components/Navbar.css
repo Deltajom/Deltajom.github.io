@@ -23,28 +23,6 @@
     position: relative;
 }
 
-/* Page Title Container */
-.nav-title-container {
-    position: absolute;
-    left: 0;
-    width: 250px; /* Fixed space for title */
-    height: 100%;
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-}
-
-/* Page Title */
-.nav-title {
-    font-size: 22px;
-    font-weight: bold;
-    color: black;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    text-align: center;
-}
-
 /* Navigation Links (Fixed) */
 .nav-list {
     list-style: none;
@@ -61,28 +39,23 @@
     display: flex; /* Ensure buttons appear correctly */
 }
 
-/* Fixes buttons completely */
+
+/* Default Button Styling */
 .nav-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none; /* Remove underlines */
-    padding: 15px 25px; /* Proper button padding */
+    text-decoration: none;
+    padding: 15px 25px;
     background: black;
     color: white;
     border-radius: 8px;
     transition: background 0.3s ease, transform 0.1s ease, color 0.3s ease;
     font-weight: bold;
+    display: inline-block;
+    text-align: center;
 }
 
 /* Hover and Click Effects */
 .nav-button:hover {
-    background: #800000; /* Dark Maroon */
-}
-
-.nav-button:active {
-    background: #600000; /* Deep Maroon */
-    transform: scale(0.95);
+    background: #b00000 !important; /* Dark Maroon */
 }
 
 /* Page Title for Small Screens (Moves Below Navbar) */
@@ -94,6 +67,14 @@
     margin-top: 90px; /* Adjusted for new navbar height */
     color: black;
 }
+
+/* Active Page Button */
+.nav-button.active {
+    background: #600000 !important; /* Current page button turns red */
+    color: white;
+    transform: scale(0.95);
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
