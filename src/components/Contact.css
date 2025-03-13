@@ -1,48 +1,44 @@
 /* Contact Page Container */
 .contact-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 30px;
     text-align: center;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6); /* Soft overlay for readability */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Title */
 .contact-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
-    color: black;
-    margin-bottom: 10px;
+    color: white; /* Ensure white text */
 }
 
-/* Description */
-.contact-description {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-/* Divider Line */
-.contact-divider {
-    border: none;
-    height: 2px;
-    background-color: #800000; /* Dark Maroon */
-    width: 50%;
-    margin: 20px auto;
+/* Contact Text */
+.contact-container p {
+    font-size: 18px;
+    color: white; /* Ensuring readability */
+    line-height: 1.6;
 }
 
 /* Email Link */
-.contact-email {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.contact-email a {
+.contact-container a {
     text-decoration: none;
-    color: #0044cc;
+    color: #66ccff; /* Light blue for contrast */
+    font-weight: bold;
     transition: color 0.3s ease;
 }
 
-.contact-email a:hover {
-    color: #800000; /* Dark Maroon */
+.contact-container a:hover {
+    color: #ff5500; /* Orange hover effect */
+}
+
+/* Horizontal Divider */
+.contact-divider {
+    width: 50%;
+    margin: 15px auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }

@@ -1,20 +1,48 @@
-.home {
+/* Home Page Container */
+.home-container {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: flex-start; /* Moves to the top */
+  height: 100vh;
+  padding-top: 40px; /* Adds some space at the top */
   text-align: center;
-  padding-top: 80px; /* Ensures image does not clip into navbar */
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
+/* Inner Content Box */
+.home-content {
+  max-width: 600px;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for readability */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Profile Image */
 .profile-pic {
-  width: 250px;
+  width: 240px;
   height: 200px;
   border-radius: 50%;
+  border: 4px solid white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Layout */
-@media (max-width: 768px) {
-  .profile-pic {
-      width: 200px;
-      height: 160px;
-  }
+/* Name & Title */
+h1 {
+  font-size: 28px;
+  margin: 10px 0;
+  color: white;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: normal;
+  color: #d9d9d9;
+}
+
+/* Bio & Interests */
+.bio-text, .interests, .hobbies {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #f0f0f0;
+  margin-bottom: 10px;
 }

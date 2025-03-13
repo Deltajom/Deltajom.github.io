@@ -1,73 +1,80 @@
-/* Page Container */
+/* Online Samples Page Container */
 .samples-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
     text-align: left;
+    position: relative;
+    background: url('/public/networklines.png') center/cover;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Dark Overlay for Readability */
+.samples-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Increased darkness for better contrast */
+    z-index: 0;
+}
+
+/* Ensures Content Appears Above the Overlay */
+.samples-container * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Title */
 .samples-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    color: white; /* Ensuring white text */
+    text-shadow: 2px 2px 4px rgba(0, 170, 255, 0.7);
 }
 
-/* Description */
-.samples-description {
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.5;
+/* Secondary Title (All Online Samples) */
+.samples-subheading {
+    font-size: 20px;
+    font-weight: bold;
+    color: white !important; /* Ensuring white text */
+    margin-top: 20px;
 }
 
-/* Samples List */
-.samples-list {
-    list-style-type: none;
-    padding: 0;
-}
 
-.samples-list li {
-    margin-bottom: 20px;
-    padding-left: 20px;
-    position: relative;
+/* Paragraph Descriptions */
+.samples-container p,
+.samples-container li {
     font-size: 16px;
     line-height: 1.6;
+    color: white !important; /* Force all normal text to be white */
 }
 
-/* Custom Bullet Points */
-.samples-list li::before {
-    content: "•";
-    color: #800000; /* Dark Maroon */
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 4px;
-}
-
-/* Styled Links */
+/* Links */
 .samples-list a {
     text-decoration: none;
-    color: #0044cc;
+    color: #66ccff; /* Light blue for contrast */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .samples-list a:hover {
-    color: #800000; /* Dark Maroon */
+    color: #ff5500; /* Orange hover effect */
 }
 
-/* Dropdown Section Title */
-.dropdown-title {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
+/* Divider Between Sections */
+.samples-divider {
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
 }
 
-/* Dropdown Container */
+/* Dropdown Sections */
 .dropdown {
     width: 100%;
     max-width: 600px;
@@ -75,14 +82,14 @@
     text-align: center;
 }
 
-/* Dropdown Button */
+/* Dropdown Buttons */
 .dropdown-btn {
     width: 100%;
-    background-color: #800000; /* Dark Maroon */
+    background-color: #006600;
     color: white;
     font-size: 16px;
     font-weight: bold;
-    padding: 10px;
+    padding: 12px;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -90,21 +97,21 @@
 }
 
 .dropdown-btn:hover {
-    background-color: #600000;
+    background-color: #004400;
 }
 
 /* Dropdown Content */
 .dropdown-content {
     display: none;
-    background: white;
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white; /* Ensuring all dropdown text is visible */
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.3);
 }
 
 /* Show dropdown when active */
 .dropdown-content.show {
     display: block;
 }
-

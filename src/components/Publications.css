@@ -1,29 +1,31 @@
-/* Container */
+/* Publications Page Container */
 .publications-container {
     max-width: 800px;
     margin: 40px auto;
-    padding: 20px;
+    padding: 30px;
     text-align: left;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
-/* ORCID Link */
+/* ORCID Link Styling */
 .orcid-link {
     text-align: center;
-    font-size: 22px; /* Increased font size */
+    font-size: 22px;
     font-weight: bold;
-    margin-bottom: 30px; /* More space before the list */
-    padding-bottom: 10px;
-    border-bottom: 2px solid #800000; /* Bounding line */
+    color: #881c1c;
+    margin-bottom: 20px;
 }
 
-.orcid-link a {
-    text-decoration: none;
-    color: #4b0082; /* Deep Purple */
-    transition: color 0.3s ease;
-}
-
-.orcid-link a:hover {
-    color: #800000; /* Dark Maroon */
+/* Adds a subtle underline effect */
+.orcid-link::after {
+    content: "";
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    border-bottom: 2px solid #881c1c;
 }
 
 /* Publications List */
@@ -32,32 +34,26 @@
     padding: 0;
 }
 
+/* Individual Publication Entry */
 .publications-list li {
-    margin-bottom: 25px;
-    padding-left: 20px;
-    position: relative;
-    font-size: 16px;
-    line-height: 1.6;
+    margin-bottom: 25px; /* Adds spacing between each publication */
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Adds a subtle separator */
 }
 
-/* Custom Bullet Point */
-.publications-list li::before {
-    content: "•";
-    color: #800000; /* Dark Maroon */
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 4px;
+/* Last Publication Entry - Remove Border */
+.publications-list li:last-child {
+    border-bottom: none;
 }
 
-/* Links in Publications */
+/* Paper Links */
 .publications-list a {
     text-decoration: none;
-    color: #0044cc;
+    color: #00aaff;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .publications-list a:hover {
-    color: #800000; /* Dark Maroon */
+    color: #ff5500;
 }

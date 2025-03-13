@@ -1,73 +1,71 @@
 /* Projects Page Container */
 .projects-container {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
     text-align: left;
+    position: relative;
+    background: url('/public/circuits.png') center/cover;
+    color: #33ff33;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Adjustable Greyness Overlay */
+.projects-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Adjust this value for more/less greyness */
+    z-index: 0;
+}
+
+/* Ensures Content Appears Above the Overlay */
+.projects-container * {
+    position: relative;
+    z-index: 1;
 }
 
 /* Title */
 .projects-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px;
+    color: #00ff00;
+    text-shadow: 2px 2px 4px rgba(0, 255, 0, 0.7);
 }
 
-/* Description */
-.projects-description {
-    font-size: 16px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-    line-height: 1.5;
+/* Divider Between Sections */
+.projects-divider {
+    width: 80%;
+    margin: 20px auto;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.4); /* Semi-transparent white */
 }
 
-/* Project List */
-.projects-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-.projects-list li {
-    margin-bottom: 25px;
-    padding-left: 20px;
-    position: relative;
+/* Paragraphs */
+.projects-container p {
     font-size: 16px;
     line-height: 1.6;
-}
-
-/* Custom Bullet Points */
-.projects-list li::before {
-    content: "•";
-    color: #800000; /* Dark Maroon */
-    font-size: 20px;
-    position: absolute;
-    left: 0;
-    top: 4px;
+    color: #99ff99;
 }
 
 /* Links */
 .projects-list a {
     text-decoration: none;
-    color: #0044cc;
+    color: #33ff33;
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .projects-list a:hover {
-    color: #800000; /* Dark Maroon */
+    color: #ff3333;
 }
 
-/* Dropdown Section Title */
-.dropdown-title {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 30px;
-}
-
-/* Dropdown Container */
+/* Dropdown Sections */
 .dropdown {
     width: 100%;
     max-width: 600px;
@@ -75,10 +73,10 @@
     text-align: center;
 }
 
-/* Dropdown Button */
+/* Dropdown Buttons */
 .dropdown-btn {
     width: 100%;
-    background-color: #800000; /* Dark Maroon */
+    background-color: #006600;
     color: white;
     font-size: 16px;
     font-weight: bold;
@@ -90,21 +88,21 @@
 }
 
 .dropdown-btn:hover {
-    background-color: #600000;
+    background-color: #004400;
 }
 
 /* Dropdown Content */
 .dropdown-content {
     display: none;
-    background: white;
+    background: rgba(0, 0, 0, 0.8);
     padding: 10px;
     border-radius: 5px;
     margin-top: 5px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: #99ff99;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.3);
 }
 
 /* Show dropdown when active */
 .dropdown-content.show {
     display: block;
 }
-

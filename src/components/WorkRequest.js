@@ -67,7 +67,7 @@ const WorkRequest = () => {
           required
         />
 
-        <button type="submit" className="submit-button">Send</button>
+        <button type="submit" className="submit-btn">Send</button>
       </form>
 
       {status && <p className="status-message">{status}</p>}

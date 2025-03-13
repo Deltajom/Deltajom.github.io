@@ -32,7 +32,7 @@ const OnlineSamples = () => {
       </ul>
 
       {/* Featured Sample Groups */}
-      <h3 className="dropdown-title">All Online Samples</h3>
+      <h2 className="dropdown-title">All Online Samples</h2>
       {[1, 2, 3, 4, 5].map((num) => (
         <div key={num} className="dropdown">
           <button className="dropdown-btn" onClick={() => toggleDropdown(num)}>

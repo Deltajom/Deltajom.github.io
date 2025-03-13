@@ -1,83 +1,68 @@
-/* Container Styling */
+/* Work Request Page Container */
 .work-request-container {
     max-width: 600px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 60px auto;
+    padding: 30px;
     text-align: center;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    color: white;
 }
 
-/* Description Text */
-.work-description {
-    font-size: 16px;
-    color: #333;
-    margin-bottom: 20px;
-    line-height: 1.5;
-}
-
-/* Form Styling */
-.work-request-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.work-request-form label {
+/* Title */
+.work-title {
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
-    display: block;
-    text-align: left;
-    width: 100%;
+    color: #ffffff;
 }
 
 /* Input Fields */
-.work-request-form input,
-.work-request-form textarea {
+.work-request-container input,
+.work-request-container textarea {
     width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    margin-top: 5px;
+    padding: 12px;
+    margin: 8px 0;
     border: 1px solid #ccc;
-    border-radius: 8px;
-    background: #f8f8f8;
+    border-radius: 8px; /* Rounded edges */
+    background: #f4f4f4; /* Light gray background */
     font-size: 16px;
-    resize: none;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Double Height for Message Box */
-.work-request-form textarea {
-    height: 150px; /* Increased height */
+/* Input Focus Effect */
+.work-request-container input:focus,
+.work-request-container textarea:focus {
+    border-color: #881c1c; /* UMass Maroon */
+    box-shadow: 0px 0px 6px rgba(136, 28, 28, 0.7);
 }
 
-/* Button Styling - Same as Navbar, but Smaller */
-.submit-button {
-    margin-top: 15px;
-    padding: 12px 24px;
-    background: black;
+.work-request-container textarea {
+    height: 150px; /* Increases message box height */
+    resize: vertical; /* Allows user to expand if needed */
+}
+
+/* Submit Button - Same as Navbar */
+.submit-btn {
+    background-color: black;
     color: white;
-    border: none;
-    border-radius: 8px;
     font-size: 16px;
     font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px; /* Rounded edges */
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.1s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-.submit-button:hover {
-    background: #800000; /* Dark Maroon */
+/* Hover Effect */
+.submit-btn:hover {
+    background-color: #881c1c; /* UMass Maroon */
 }
 
-.submit-button:active {
-    background: #600000; /* Deep Maroon */
+/* Click Effect */
+.submit-btn:active {
     transform: scale(0.95);
-}
-
-/* Status Message */
-.status-message {
-    margin-top: 15px;
-    font-size: 14px;
-    font-weight: bold;
-    color: green;
 }
