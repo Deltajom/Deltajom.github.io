@@ -1,7 +1,7 @@
 /* Work Request Page Container */
 .work-request-container {
     max-width: 600px;
-    margin: 60px auto;
+    margin: 70px auto;
     padding: 30px;
     text-align: center;
     background: rgba(0, 0, 0, 0.6); /* Dark overlay */

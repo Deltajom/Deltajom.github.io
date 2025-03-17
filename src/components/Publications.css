@@ -1,7 +1,7 @@
 /* Publications Page Container */
 .publications-container {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 70px auto 40px auto; /* Increased top margin to fully clear navbar */
     padding: 30px;
     text-align: left;
     background: rgba(0, 0, 0, 0.4);
