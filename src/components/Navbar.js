@@ -6,18 +6,18 @@ const Navbar = () => {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Page Titles
-  const pageTitles = {
-    "/": "Home",
-    "/resume": "Resume/CV",
-    "/publications": "Publications",
-    "/featured-projects": "Projects",
-    "/work-request": "Work Request",
-    "/online-samples": "Online Samples",
-    "/contact": "Contact Me",
-  };
+  // // Page Titles
+  // const pageTitles = {
+  //   "/": "Home",
+  //   "/resume": "Resume/CV",
+  //   "/publications": "Publications",
+  //   "/featured-projects": "Projects",
+  //   "/online-samples": "Online Samples",
+  //   "/work-request": "Work Request",
+  //   "/contact": "Contact Me",
+  // };
 
-  const currentPageTitle = pageTitles[location.pathname] || "Page";
+  // const currentPageTitle = pageTitles[location.pathname] || "Page";
 
   return (
     <div className="navbar-container">
@@ -33,8 +33,8 @@ const Navbar = () => {
           <li><Link to="/resume" className={location.pathname === "/resume" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Resume/CV</Link></li>
           <li><Link to="/publications" className={location.pathname === "/publications" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Publications</Link></li>
           <li><Link to="/featured-projects" className={location.pathname === "/featured-projects" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Projects</Link></li>
-          <li><Link to="/work-request" className={location.pathname === "/work-request" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Work Request</Link></li>
           <li><Link to="/online-samples" className={location.pathname === "/online-samples" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Online Samples</Link></li>
+          <li><Link to="/work-request" className={location.pathname === "/work-request" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Work Request</Link></li> 
           <li><Link to="/contact" className={location.pathname === "/contact" ? "nav-button active" : "nav-button"} onClick={() => setMenuOpen(false)}>Contact Me</Link></li>
         </ul>
       </nav>

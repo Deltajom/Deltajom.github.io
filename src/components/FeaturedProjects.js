@@ -1,6 +1,15 @@
 import React, { useState } from 'react';
 import './FeaturedProjects.css';
 
+// Object to store unique descriptions for each category
+const projectDescriptions = { "Networking": "Projects related to network programming, socket communication, and distributed systems.",
+  "Unreal Engine": "Unreal Engine projects focusing on real-time rendering and interactive simulations.",
+  "Unity": "Unity-based projects, including VR, AR, and game development.",
+  "C++": "C++ projects covering high-performance computing, system programming, and algorithm optimization.",
+  "Python": "Python-based projects involving automation, data science, and machine learning.",
+  "Other": "Miscellaneous projects that don’t fit into the above categories."
+};
+
 const FeaturedProjects = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -30,15 +39,20 @@ const FeaturedProjects = () => {
         </li>
       </ul>
 
-      {/* Featured Project Groups */}
-      <h3 className="dropdown-title">All Projects</h3>
-      {[1, 2, 3, 4, 5].map((num) => (
-        <div key={num} className="dropdown">
-          <button className="dropdown-btn" onClick={() => toggleDropdown(num)}>
-            Group {num} {openDropdown === num ? "▲" : "▼"}
+      {[
+        "Networking",
+        "Unreal Engine",
+        "Unity",
+        "C++",
+        "Python",
+        "Other"
+      ].map((category) => (
+        <div key={category} className="dropdown">
+          <button className="dropdown-btn" onClick={() => toggleDropdown(category)}>
+            {category} Projects {openDropdown === category ? "▲" : "▼"}
           </button>
-          <div className={`dropdown-content ${openDropdown === num ? "show" : ""}`}>
-            <p>Details about Group {num} go here.</p>
+          <div className={`dropdown-content ${openDropdown === category ? "show" : ""}`}>
+            <p>{projectDescriptions[category]}</p>
           </div>
         </div>
       ))}
