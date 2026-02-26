@@ -40,7 +40,7 @@ const WorkRequest = () => {
       <h2>Submit a Work Request</h2>
       <p className="work-description">
         Have an idea for an open-source project or need a custom solution? Feel free to submit a request. 
-        Due to time constraints, responses may take a while. Note that this form is limited to 200 emails per month.
+        Due to time constraints, responses may take a while.
       </p>
 
       <form onSubmit={handleSubmit} className="work-request-form">

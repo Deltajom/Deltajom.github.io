@@ -7,7 +7,7 @@ const Publications = () => {
       {/* ORCID Link */}
       <h2 className="orcid-link">
         <a href="https://orcid.org/0009-0000-8264-0623" target="_blank" rel="noopener noreferrer">
-          My ORCID ID
+          My ORCID ID - 0009-0000-8264-0623
         </a>
       </h2>
 

@@ -9,16 +9,14 @@ const Home = () => {
         <h1>John Murray</h1>
         <h2>Graduate Research Assistant</h2>
         <p className="bio-text">
-          Ph.D. Student at UMass Amherst<br />
-          M.S. in Computer Engineering, UMass Amherst<br />
-          B.S. in Computer Engineering, UMass Amherst
+          Ph.D. Student at UMass Amherst
         </p>
         <p className="interests">
           I'm interested in Extended Reality technology, video streaming, computer networking,
           machine learning, cryptocurrencies, and accelerated computing.
         </p>
         <p className="hobbies">
-          Hobbies: Weight lifting, fixing cars/electronics, gaming, Star Wars, saxophone and traveling
+          Hobbies: Weight lifting, fixing cars/electronics, Star Wars, gaming, saxophone, and traveling
         </p>
       </div>
     </div>
