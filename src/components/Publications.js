@@ -14,6 +14,20 @@ const Publications = () => {
       {/* Publications List */}
       <ul className="publications-list">
         <li>
+          <strong>miVirtualSeat: A Next Generation Hybrid Telepresence System</strong><br />
+          Klara Nahrstedt; Ramesh Sitaraman; Jacob Chakareski; Michael Zink; Mingyuan Wu; Lingdong Wang; Bo Chen; Ruifan Ji; Kuan-Ying Lee; John Murray et al.<br />
+          <em>EMS '25: Proceedings of the 3rd Workshop on Emerging Multimedia Systems</em><br />
+          <a href="https://doi.org/10.1145/3746441.3748238" target="_blank" rel="noopener noreferrer">DOI: 10.1145/3746441.3748238</a>
+        </li>
+
+         <li>
+          <strong>Conference Paper: Synchronized Object Sharing for Augmented Reality Virtual Conferencing</strong><br />
+          John Murray; Michael Zink<br />
+          <em>2024 International Symposium on Multimedia (ISM)</em><br />
+          <a href="https://doi.org/10.1109/ism63611.2024.00048" target="_blank" rel="noopener noreferrer">DOI: 10.1109/ism63611.2024.00048</a>
+        </li>
+
+        <li>
           <strong>Masters Thesis: Synchronized Object Sharings for Augmented Reality Virtual Conferencing</strong><br />
           John O. Murray, 2024.<br />
           <em>University of Massachusetts Amherst.</em><br />

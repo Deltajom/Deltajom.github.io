@@ -4,6 +4,20 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Add this BEFORE React mounts so the Router sees the corrected path
+(function fixGhPagesDeepLink() {
+  try {
+    const params = new URLSearchParams(window.location.search);
+    const p = params.get('p');
+    if (p) {
+      const newUrl = p; // p already contains path + search + hash
+      window.history.replaceState(null, '', newUrl);
+    }
+  } catch (e) {
+    // noop
+  }
+})();
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
